@@ -1,0 +1,277 @@
+ body{
+   background: linear-gradient( 109.6deg,  rgba(75,228,255,1) 11.2%, rgba(188,204,251,1) 100.6% );
+   /*display: flex;*/
+   padding-top: 80px;
+ }
+ .white_bg{
+    background: url("v2.png") no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 10px rgba(75, 228, 255, 1);
+  font: italic small-caps bold 16px/2 cursive;
+  min-height: 600px;
+  padding: 3rem;
+  margin: 0 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.image-text-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  white-space: nowrap;
+  z-index: 2;
+}
+.left-content-box {
+  background: transparent; /* blend with your hero section */
+  border-radius: 0.5rem;
+  box-shadow: none;
+  padding: 0;               /* remove padding */
+  margin: 0;                /* optional */
+  border: none; 
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.typed-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  font-variant: small-caps;
+  font-family: 'Segoe UI', sans-serif; /* or a clean modern font */
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 100px;
+  word-wrap: break-word;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Delay helpers if you want staggered timing */
+.fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+.fade-in.delay-2 {
+  animation-delay: 1s;
+}
+
+
+
+ .navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+ }
+ .navbar-brand{
+    font-weight: 500;
+    color: #2fb38f !important;
+    font-size: 24px;
+    transition: 0.3s color ease;
+ }
+ .login-button{
+    background-color: #2fb38f;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px ;
+    text-decoration: none;
+    transition: 0.3s background-color;
+ }
+
+.login-button:hover{
+
+  background-color: #035e46;
+ }
+ .navbar-toggler{
+    border:none;
+    font-size: 1.25 rem;
+ }
+ .navbar-toggler:focus, .btn-close:focus {
+    box-shadow :none;
+    outline: none;
+ }
+ .nav-link{
+  color:#1c106e;
+  font-weight: 500;
+  position: relative;
+ }
+ 
+ .nav-link:hover,.nav-link.active{
+  color: #000;
+ }
+ @media (min-width: 991px){}
+ .nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width:0;
+  height: 2px;
+  background-color: #2fb38f;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+ }
+ .nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+ }
+ .hero-section{
+    background: url(v2.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+ }
+ .contact-section {
+  background: linear-gradient(109.6deg, rgba(75, 228, 255, 0.2) 11.2%, rgba(188, 204, 251, 0.2) 100.6%);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+.card a:hover {
+  color: #2fb38f;
+  text-decoration: underline;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+.glass-text {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/* Desktop (default) styles */
+.service-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  min-height: 400px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.card-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.bdride-logo {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 768px) {
+  .service-card {
+    min-height: auto;
+    padding: 2rem 1rem;
+    border: none;
+  }
+
+  .card-overlay {
+    padding: 1rem;
+  }
+
+  .bdride-logo {
+    max-width: 60px;
+  }
+  .director-card img {
+  object-fit: cover;
+  border: 4px solid #2fb38f;
+  transition: transform 0.3s;
+}
+.director-card:hover img {
+  transform: scale(1.05);
+}
+.director-card .card-title {
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Optional: scroll styling */
+
+
+}
+.director-card {
+  height: 100px; /* or any height you prefer */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bio-scroll {
+  max-height: 100px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+  text-align: left;
+  width: 100%;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge */
+}
+.bio-scroll::-webkit-scrollbar {
+  width: 6px;
+  display: none; /* Chrome, Safari, Opera */
+}
+.bio-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.bio-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
