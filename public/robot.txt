@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://bdmobilitysolutionsltd.vercel.app/sitemap.xml
