@@ -259,7 +259,7 @@
   overflow-y: auto;
   font-size: 0.9rem;
   padding: 0 0.5rem;
-  text-align: left;
+  text-align: center;
   width: 100%;
   scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;     /* IE & Edge */
@@ -275,3 +275,4 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
