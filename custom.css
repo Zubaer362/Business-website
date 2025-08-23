@@ -85,8 +85,7 @@
  .navbar{
     background-color: #fff;
     height: 80px;
-    margin: 20px;
-    border-radius: 16px;
+  
  }
  .navbar-brand{
     font-weight: 500;
@@ -275,4 +274,5 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 
