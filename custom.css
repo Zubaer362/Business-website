@@ -89,10 +89,10 @@
  }
 @media (max-width: 576px) {
   .navbar-brand img:first-child {
-    max-height: 40px;
+    max-height: 60px;
   }
   .navbar-brand img:last-child {
-    max-height: 25px;
+    max-height: 35px;
   }
 }
  .navbar-brand{
@@ -282,6 +282,7 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 
 
 
