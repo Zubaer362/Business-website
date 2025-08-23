@@ -85,8 +85,16 @@
  .navbar{
     background-color: #fff;
     height: 80px;
-  
+    align-items: center;
  }
+@media (max-width: 576px) {
+  .navbar-brand img:first-child {
+    max-height: 40px;
+  }
+  .navbar-brand img:last-child {
+    max-height: 25px;
+  }
+}
  .navbar-brand{
     font-weight: 500;
     color: #2fb38f !important;
@@ -274,5 +282,6 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 
 
