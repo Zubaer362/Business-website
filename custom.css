@@ -83,7 +83,7 @@
 
 
  .navbar{
-    background-color: #fff;
+    background-color: #befcff;
     height: 80px;
     align-items: center;
    /*margin: 20px;
@@ -284,6 +284,7 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 
 
 
