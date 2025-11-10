@@ -1,5 +1,5 @@
  body{
-   background: linear-gradient( 109.6deg,  rgba(75,228,255,1) 11.2%, rgba(188,204,251,1) 100.6% );
+   background: linear-gradient( 109.6deg,  rgba(177, 255, 242) 11.2%, rgba(188,204,251,1) 100.6% );
    /*display: flex;*/
    padding-top: 80px;
  }
@@ -284,6 +284,7 @@
 .bio-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 
 
 
